@@ -18,3 +18,9 @@
     width: 80px;
     border-radius: 5px;
 }
+ 
+body {
+    background-image: url(../Maktub/img/imagem\ cinema.jpg)
+    background-repeat: no-repeat;
+    background-size: auto;
+}

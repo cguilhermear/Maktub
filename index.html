@@ -10,40 +10,20 @@ Este arquivo já esta pronto e você pode mandar para quem quiser
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="template.css">
+
     <title>Nunca te pedi nada...</title>
+
 </head>
 
 <body>
     <div id="conteudo">
-        <h2>Sai comigo neste fim de semana??</h2>
+        <h1>Sai comigo neste fim de semana??</h1>
         <div style="margin: auto;width: 170px;">
             <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM</button>
             <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
         </div>
     </div>
 </body>
-<script>
-    function sim() {
-        alert(" Fez a escolha certa :) ");
-        // redireciona para um URL após clicar no SIM
-        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
-    }
-
-    function desvia(btn) {
-        // btn declarado na função
-        btn.style.position = 'absolute';
-        btn.style.bottom = geraPosicao(10, 90);
-        btn.style.left = geraPosicao(10, 90);
-        console.log('opa, desviei...');
-    }
-
-    function geraPosicao(min, max) {
-        return (Math.random() * (max - min) + min) + "%";
-    }
-
-    /* Apague se quiser, isso apenas escreve MTHS1901 e o link para o tutorial no console */
-    const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
-
-</script>
-
 </html>
